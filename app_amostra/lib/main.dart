@@ -18,18 +18,14 @@ class MainApp extends StatefulWidget{
 class MainAPP extends State<MainApp> {
 
   List<Jogo> jogos = List.empty();
-  Jogo mostrarJogos = Jogo();
 
   Future<void> readJson() async {
     final String response = await rootBundle.loadString('assets/jogos.json');
      Iterable data = await json.decode(response);
     jogos = List<Jogo>.from(data.map((model) => Jogo.fromJson(model)));
 
-    //mostrarJogos = Jogo.dados(jogos[0].nome, jogos[0].empresa, jogos[0].lancamento, jogos[0].sinopse, jogos[0].genero, jogos[0].pathimg, jogos[0].trailer, jogos[0].galeriaImg);
-
     setState(() {
       jogos;
-      mostrarJogos;
     });
   }
 
@@ -58,7 +54,7 @@ class MainAPP extends State<MainApp> {
             children: <Widget>[
                 Expanded(
                 child: ListView.builder(
-                  itemCount: 4,
+                  itemCount: jogos.length,
                   shrinkWrap: true,
                   padding: const EdgeInsets.all(5),
                   scrollDirection: Axis.vertical,
