@@ -7,7 +7,7 @@ class Jogo
   late String pathimg;
   late String trailer;
   late DateTime lancamento;
-  late List<String> galeriaImg = [];
+  late List<dynamic> galeriaImg = [];
   Jogo()
   {
     nome = "";
@@ -30,7 +30,7 @@ class Jogo
     genero = json['Jogo Genero'] as String,
     pathimg = json['Jogo Img'] as String,
     trailer = json['Jogo trailer'] as String,
-    galeriaImg = json['Jogo Galeria'] as List<String>;
+    galeriaImg = json['Jogo Galeria'] as List<dynamic>;
 
   Map<String, dynamic> toJson() => {
     'Jogo Name': nome,

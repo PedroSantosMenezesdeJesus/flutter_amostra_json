@@ -17,12 +17,12 @@ class MainApp extends StatefulWidget{
 
 class MainAPP extends State<MainApp> {
 
-  List<Jogo> jogos = List.empty();
+  List<Jogo> jogos = List.empty(growable: true);
 
   Future<void> readJson() async {
     final String response = await rootBundle.loadString('assets/jogos.json');
      Iterable data = await json.decode(response);
-    jogos = List<Jogo>.from(data.map((model) => Jogo.fromJson(model)));
+    jogos = List<Jogo>.from(data.map((model)=> Jogo.fromJson(model)));
 
     setState(() {
       jogos;
