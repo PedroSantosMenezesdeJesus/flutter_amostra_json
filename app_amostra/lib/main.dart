@@ -66,7 +66,7 @@ class MainAPP extends State<MainApp> {
                       child: ListTile(
                         contentPadding: EdgeInsets.all(32), 
                         leading: CircleAvatar(
-                          backgroundImage: AssetImage(jogos[index].pathimg), radius: 32,
+                          backgroundImage: AssetImage(jogos[index].galeriaImg[0]), radius: 32,
                         ),
                         title: Text(
                           jogos[index].nome,

@@ -4,7 +4,6 @@ class Jogo
   late String genero;
   late String empresa;
   late String sinopse;
-  late String pathimg;
   late String trailer;
   late DateTime lancamento;
   late List<dynamic> galeriaImg = [];
@@ -14,13 +13,12 @@ class Jogo
     empresa = "";
     genero = "";
     sinopse = "";
-    pathimg = "";
     trailer = "";
     lancamento = DateTime.now();
     galeriaImg = ["", "", ""];
   }
 
-  Jogo.dados(this.nome, this.empresa, this.lancamento, this.sinopse, this.genero, this.pathimg, this.trailer, this.galeriaImg);
+  Jogo.dados(this.nome, this.empresa, this.lancamento, this.sinopse, this.genero, this.trailer, this.galeriaImg);
 
   Jogo.fromJson(Map<String, dynamic> json):
     nome = json['Jogo Name'] as String,
@@ -28,7 +26,6 @@ class Jogo
     lancamento = Jogo.tratarData(json['Jogo Date']),
     sinopse = json['Jogo Sinopse'] as String,
     genero = json['Jogo Genero'] as String,
-    pathimg = json['Jogo Img'] as String,
     trailer = json['Jogo trailer'] as String,
     galeriaImg = json['Jogo Galeria'] as List<dynamic>;
 
@@ -38,7 +35,6 @@ class Jogo
     'Jogo Date': lancamento,
     'Jogo Sinopse': sinopse,
     'Jogo Genero': genero,
-    'Jogo Img': pathimg,
     'Jogo trailer': trailer,
     'Jogo Galeria': galeriaImg,
   };  

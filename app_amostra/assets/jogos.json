@@ -5,9 +5,8 @@
         "Jogo Date": "1991-23-06",
         "Jogo Sinopse" : "Sonic precisa salvar os animais inocentes do Dr Eggman",
         "Jogo Genero" : "Aventura",
-        "Jogo Img" : "img/Sonic_the_Hedgehog_1991_capa.png",
         "Jogo trailer" : "videos/Sonic_trailer.mp4",
-        "Jogo Galeria" : ["img/sonic_gameplay.jpg", "img/sonic_gameplay2.webp", "img/sonic_gameplay3.webp"]
+        "Jogo Galeria" : ["img/Sonic_the_Hedgehog_1991_capa.png", "img/sonic_gameplay.jpg", "img/sonic_gameplay2.webp", "img/sonic_gameplay3.webp"]
     },
     {
         "Jogo Name": "Scott Pilgrim",
@@ -15,9 +14,8 @@
         "Jogo Date": "2010-10-08",
         "Jogo Sinopse" : "Scott enfrenta os 7 exs malvados para ficar com Ramona",
         "Jogo Genero" : "Beat em up",
-        "Jogo Img" : "img/scott_pilgrim.webp",
         "Jogo trailer" : "videos/Scott_trailer.mp4",
-        "Jogo Galeria" : ["img/scott_gameplay.jpg", "img/scott_gameplay2.jpg", "img/scott_gameplay3.jpg"]
+        "Jogo Galeria" : ["img/scott_pilgrim.webp", "img/scott_gameplay.jpg", "img/scott_gameplay2.jpg", "img/scott_gameplay3.jpg"]
     },
     {
         "Jogo Name": "Lego",
@@ -25,9 +23,8 @@
         "Jogo Date": "2014-06-06",
         "Jogo Sinopse" : "Uma aventura no universo lego",
         "Jogo Genero" : "Plataforma e Construção",
-        "Jogo Img" : "img/lego.jpg",
         "Jogo trailer" : "videos/Lego_trailer.mp4",
-        "Jogo Galeria" : ["img/lego_gameplay.jpg", "img/lego_gameplay2.jpg", "img/lego_gameplay3.jpg"]
+        "Jogo Galeria" : ["img/lego.jpg", "img/lego_gameplay.jpg", "img/lego_gameplay2.jpg", "img/lego_gameplay3.jpg"]
     },
     {
         "Jogo Name": "Kung Fu Panda",
@@ -35,9 +32,8 @@
         "Jogo Date": "2008-04-06",
         "Jogo Sinopse" : "Po se torna o dração guerreiro e precisa derrotar Tai lung",
         "Jogo Genero" : "luta",
-        "Jogo Img" : "img/Kung-Fu-Panda.webp",
         "Jogo trailer" : "videos/Kung_fu_trailer.mp4",
-        "Jogo Galeria" : ["img/po_gameplay.jpg", "img/po_gameplay2.jpg", "img/po_gameplay3.webp"]
+        "Jogo Galeria" : ["img/Kung-Fu-Panda.webp", "img/po_gameplay.jpg", "img/po_gameplay2.jpg", "img/po_gameplay3.webp"]
     }
 
 ]
