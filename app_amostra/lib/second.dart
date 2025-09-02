@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:app_amostra/jogo.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 void secondpag() {
   runApp(const SecondPag());
@@ -14,6 +15,12 @@ class SecondPag extends StatelessWidget{
     final jogos = ModalRoute.of(context)!.settings.arguments as Jogo;
 
     final ScrollController controle = ScrollController();
+
+    Future<void> launchURL() async {
+   final Uri url = Uri.parse(jogos.link);
+   if (!await launchUrl(url)) {
+        throw Exception('Could not launch $url');
+    }}
 
     return Scaffold(
       appBar: AppBar(
@@ -71,8 +78,14 @@ class SecondPag extends StatelessWidget{
                     Divider(height: 20, indent: 20, endIndent: 0, color: Colors.black),
                     Image.asset(jogos.galeriaImg[3], width: 300, height: 200),
 
-                    
-
+                    Divider(height: 20, indent: 20, endIndent: 0, color: Colors.black),
+                    ElevatedButton(
+                      onPressed: launchURL, 
+                      style: ButtonStyle(
+                        backgroundColor: WidgetStatePropertyAll<Color>(Colors.green),
+                        minimumSize: WidgetStatePropertyAll<Size>(Size(100, 100)),
+                      ),
+                      child: const Text('LINK!', style: TextStyle(fontSize: 20),))
                   ],
                 )  
               );

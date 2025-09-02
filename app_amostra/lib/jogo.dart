@@ -7,6 +7,7 @@ class Jogo
   late String trailer;
   late DateTime lancamento;
   late List<dynamic> galeriaImg = [];
+  late String link;
   Jogo()
   {
     nome = "";
@@ -15,10 +16,11 @@ class Jogo
     sinopse = "";
     trailer = "";
     lancamento = DateTime.now();
-    galeriaImg = ["", "", ""];
+    galeriaImg = [""];
+    link = "";
   }
 
-  Jogo.dados(this.nome, this.empresa, this.lancamento, this.sinopse, this.genero, this.trailer, this.galeriaImg);
+  Jogo.dados(this.nome, this.empresa, this.lancamento, this.sinopse, this.genero, this.trailer, this.galeriaImg, this.link);
 
   Jogo.fromJson(Map<String, dynamic> json):
     nome = json['Jogo Name'] as String,
@@ -27,7 +29,8 @@ class Jogo
     sinopse = json['Jogo Sinopse'] as String,
     genero = json['Jogo Genero'] as String,
     trailer = json['Jogo trailer'] as String,
-    galeriaImg = json['Jogo Galeria'] as List<dynamic>;
+    galeriaImg = json['Jogo Galeria'] as List<dynamic>,
+    link = json["Jogo Link"] as String;
 
   Map<String, dynamic> toJson() => {
     'Jogo Name': nome,
@@ -37,6 +40,7 @@ class Jogo
     'Jogo Genero': genero,
     'Jogo trailer': trailer,
     'Jogo Galeria': galeriaImg,
+    'Jogo Link' : link,
   };  
 
 

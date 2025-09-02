@@ -6,7 +6,8 @@
         "Jogo Sinopse" : "Sonic precisa salvar os animais inocentes do Dr Eggman",
         "Jogo Genero" : "Aventura",
         "Jogo trailer" : "videos/Sonic_trailer.mp4",
-        "Jogo Galeria" : ["img/Sonic_the_Hedgehog_1991_capa.png", "img/sonic_gameplay.jpg", "img/sonic_gameplay2.webp", "img/sonic_gameplay3.webp"]
+        "Jogo Galeria" : ["img/Sonic_the_Hedgehog_1991_capa.png", "img/sonic_gameplay.jpg", "img/sonic_gameplay2.webp", "img/sonic_gameplay3.webp"],
+        "Jogo Link" : "https://store.steampowered.com/app/1237320/Sonic_Frontiers/"
     },
     {
         "Jogo Name": "Scott Pilgrim",
@@ -15,7 +16,8 @@
         "Jogo Sinopse" : "Scott enfrenta os 7 exs malvados para ficar com Ramona",
         "Jogo Genero" : "Beat em up",
         "Jogo trailer" : "videos/Scott_trailer.mp4",
-        "Jogo Galeria" : ["img/scott_pilgrim.webp", "img/scott_gameplay.jpg", "img/scott_gameplay2.jpg", "img/scott_gameplay3.jpg"]
+        "Jogo Galeria" : ["img/scott_pilgrim.webp", "img/scott_gameplay.jpg", "img/scott_gameplay2.jpg", "img/scott_gameplay3.jpg"],
+        "Jogo Link" : "https://store.steampowered.com/app/2215260/Scott_Pilgrim_vs_The_World_The_Game__Complete_Edition/"
     },
     {
         "Jogo Name": "Lego",
@@ -24,7 +26,8 @@
         "Jogo Sinopse" : "Uma aventura no universo lego",
         "Jogo Genero" : "Plataforma e Construção",
         "Jogo trailer" : "videos/Lego_trailer.mp4",
-        "Jogo Galeria" : ["img/lego.jpg", "img/lego_gameplay.jpg", "img/lego_gameplay2.jpg", "img/lego_gameplay3.jpg"]
+        "Jogo Galeria" : ["img/lego.jpg", "img/lego_gameplay.jpg", "img/lego_gameplay2.jpg", "img/lego_gameplay3.jpg"],
+        "Jogo Link" : "https://store.steampowered.com/app/267530/The_LEGO_Movie__Videogame/"
     },
     {
         "Jogo Name": "Kung Fu Panda",
@@ -33,7 +36,8 @@
         "Jogo Sinopse" : "Po se torna o dração guerreiro e precisa derrotar Tai lung",
         "Jogo Genero" : "luta",
         "Jogo trailer" : "videos/Kung_fu_trailer.mp4",
-        "Jogo Galeria" : ["img/Kung-Fu-Panda.webp", "img/po_gameplay.jpg", "img/po_gameplay2.jpg", "img/po_gameplay3.webp"]
+        "Jogo Galeria" : ["img/Kung-Fu-Panda.webp", "img/po_gameplay.jpg", "img/po_gameplay2.jpg", "img/po_gameplay3.webp"],
+        "Jogo Link" : "https://www.xbox.com/pt-BR/games/store/kung-fu-panda/9N327F1M4BLL"
     }
 
 ]
