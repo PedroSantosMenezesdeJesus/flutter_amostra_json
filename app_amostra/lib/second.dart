@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:app_amostra/jogo.dart';
+import 'package:app_amostra/trailer.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 void secondpag() {
@@ -85,7 +86,26 @@ class SecondPag extends StatelessWidget{
                         backgroundColor: WidgetStatePropertyAll<Color>(Colors.green),
                         minimumSize: WidgetStatePropertyAll<Size>(Size(100, 100)),
                       ),
-                      child: const Text('LINK!', style: TextStyle(fontSize: 20),))
+                      child: const Text('LINK!', style: TextStyle(fontSize: 20),)
+                    ),
+
+                    Divider(height: 20, indent: 20, endIndent: 0, color: Colors.black),
+                    ElevatedButton(
+                      onPressed: () => Navigator.push(
+                        context, 
+                        MaterialPageRoute(
+                          builder: (context) => const TrailerPag(),
+                          settings: RouteSettings(
+                            arguments: jogos
+                          )
+                        )
+                      ), 
+                      style: ButtonStyle(
+                        backgroundColor: WidgetStatePropertyAll<Color>(Colors.green),
+                        minimumSize: WidgetStatePropertyAll<Size>(Size(100, 100)),
+                      ),
+                      child: const Text('Trailer!', style: TextStyle(fontSize: 20),)
+                    )
                   ],
                 )  
               );
