@@ -12,24 +12,37 @@ class TrailerPag extends StatefulWidget{
 class _TrailerPagState extends State<TrailerPag>{
 
   late VideoPlayerController _trailer;
+<<<<<<< HEAD
  
   @override 
    void initState() {
     super.initState();
   }
 
+=======
+  
+>>>>>>> b4f3c95779843568ad23a709a6d47f85cc4af423
   @override
   Widget build(BuildContext context){
 
     final ScrollController controle = ScrollController();
 
+<<<<<<< HEAD
     final jogos = ModalRoute.of(context)!.settings.arguments as Jogo;    
+=======
+    final jogos = ModalRoute.of(context)!.settings.arguments as Jogo;
+>>>>>>> b4f3c95779843568ad23a709a6d47f85cc4af423
 
     _trailer = VideoPlayerController.asset(jogos.trailer)..initialize().then((_){
       _trailer.play();
         setState(() {});
     });
+<<<<<<< HEAD
   
+=======
+
+    
+>>>>>>> b4f3c95779843568ad23a709a6d47f85cc4af423
     return Scaffold(
       appBar: AppBar(
         title: const Text('Trailer dos Jogos'),
@@ -40,6 +53,7 @@ class _TrailerPagState extends State<TrailerPag>{
       body: Center(
 
         child: Scrollbar(
+<<<<<<< HEAD
           trackVisibility: true,
           thumbVisibility: true,
           thickness: 10,
@@ -47,6 +61,15 @@ class _TrailerPagState extends State<TrailerPag>{
           interactive: true,
           controller: controle,
 
+=======
+
+          trackVisibility: true,
+          thumbVisibility: true,
+          thickness: 10,
+          radius: const Radius.circular(20),
+          interactive: true,
+          controller: controle,
+>>>>>>> b4f3c95779843568ad23a709a6d47f85cc4af423
           child: ListView.builder(
 
             controller: controle,
@@ -54,21 +77,36 @@ class _TrailerPagState extends State<TrailerPag>{
             itemBuilder: (context, index) {
 
               return Container(
+<<<<<<< HEAD
                 padding: const EdgeInsets.all(5),
               
+=======
+                padding: const EdgeInsets.all(10),
+                
+>>>>>>> b4f3c95779843568ad23a709a6d47f85cc4af423
                 child: Column(
                   mainAxisSize: MainAxisSize.max,
                   mainAxisAlignment: MainAxisAlignment.center,
                   spacing: 2,
+<<<<<<< HEAD
                   
+=======
+
+>>>>>>> b4f3c95779843568ad23a709a6d47f85cc4af423
                   children: [
                     AspectRatio(
                       aspectRatio: _trailer.value.aspectRatio,
                       child: VideoPlayer(_trailer),
                     ),
+<<<<<<< HEAD
                 
                     const Padding(padding: EdgeInsets.all(2)),
                 
+=======
+              
+                    const Padding(padding: EdgeInsets.all(20)),
+              
+>>>>>>> b4f3c95779843568ad23a709a6d47f85cc4af423
                     Row(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
@@ -105,7 +143,10 @@ class _TrailerPagState extends State<TrailerPag>{
                           ), 
                           child: const Icon(Icons.play_arrow)
                         )
+<<<<<<< HEAD
 
+=======
+>>>>>>> b4f3c95779843568ad23a709a6d47f85cc4af423
                       ],
                     )
                   ],
