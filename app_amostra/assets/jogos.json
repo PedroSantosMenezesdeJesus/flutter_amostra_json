@@ -5,11 +5,7 @@
         "Jogo Date": "1991-23-06",
         "Jogo Sinopse" : "Sonic precisa salvar os animais inocentes do Dr Eggman",
         "Jogo Genero" : "Aventura",
-<<<<<<< HEAD
         "Jogo trailer" : "https://youtu.be/kCaAos6FeV0",
-=======
-        "Jogo trailer" : "videos/Sonic_trailer.mp4",
->>>>>>> dfce84c452bc55b33a0b17794263a1e3063a145e
         "Jogo Galeria" : ["img/Sonic_the_Hedgehog_1991_capa.png", "img/sonic_gameplay.jpg", "img/sonic_gameplay2.webp", "img/sonic_gameplay3.webp"],
         "Jogo Link" : "https://store.steampowered.com/app/1237320/Sonic_Frontiers/"
     },
@@ -19,11 +15,7 @@
         "Jogo Date": "2010-10-08",
         "Jogo Sinopse" : "Scott enfrenta os 7 exs malvados para ficar com Ramona",
         "Jogo Genero" : "Beat em up",
-<<<<<<< HEAD
         "Jogo trailer" : "https://youtu.be/H8MOiJ74g2o",
-=======
-        "Jogo trailer" : "videos/Scott_trailer.mp4",
->>>>>>> dfce84c452bc55b33a0b17794263a1e3063a145e
         "Jogo Galeria" : ["img/scott_pilgrim.webp", "img/scott_gameplay.jpg", "img/scott_gameplay2.jpg", "img/scott_gameplay3.jpg"],
         "Jogo Link" : "https://store.steampowered.com/app/2215260/Scott_Pilgrim_vs_The_World_The_Game__Complete_Edition/"
     },
@@ -33,11 +25,7 @@
         "Jogo Date": "2014-06-06",
         "Jogo Sinopse" : "Uma aventura no universo lego",
         "Jogo Genero" : "Plataforma e Construção",
-<<<<<<< HEAD
         "Jogo trailer" : "https://youtu.be/hEO0YJ2mzFs",
-=======
-        "Jogo trailer" : "videos/Lego_trailer.mp4",
->>>>>>> dfce84c452bc55b33a0b17794263a1e3063a145e
         "Jogo Galeria" : ["img/lego.jpg", "img/lego_gameplay.jpg", "img/lego_gameplay2.jpg", "img/lego_gameplay3.jpg"],
         "Jogo Link" : "https://store.steampowered.com/app/267530/The_LEGO_Movie__Videogame/"
     },
@@ -47,11 +35,7 @@
         "Jogo Date": "2008-04-06",
         "Jogo Sinopse" : "Po se torna o dração guerreiro e precisa derrotar Tai lung",
         "Jogo Genero" : "luta",
-<<<<<<< HEAD
         "Jogo trailer" : "https://youtu.be/RFbdUTrs2-U",
-=======
-        "Jogo trailer" : "videos/Kung_fu_trailer.mp4",
->>>>>>> dfce84c452bc55b33a0b17794263a1e3063a145e
         "Jogo Galeria" : ["img/Kung-Fu-Panda.webp", "img/po_gameplay.jpg", "img/po_gameplay2.jpg", "img/po_gameplay3.webp"],
         "Jogo Link" : "https://www.xbox.com/pt-BR/games/store/kung-fu-panda/9N327F1M4BLL"
     }
