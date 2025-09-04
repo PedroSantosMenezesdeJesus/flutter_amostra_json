@@ -24,3 +24,7 @@ flutter:
   assets: 
    - assets/jogos.json
    - img/
+<<<<<<< HEAD
+=======
+   - videos/ 
+>>>>>>> dfce84c452bc55b33a0b17794263a1e3063a145e
