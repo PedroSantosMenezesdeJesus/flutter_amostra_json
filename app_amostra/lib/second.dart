@@ -1,9 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:app_amostra/jogo.dart';
-<<<<<<< HEAD
-=======
-import 'package:app_amostra/trailer.dart';
->>>>>>> dfce84c452bc55b33a0b17794263a1e3063a145e
 import 'package:url_launcher/url_launcher.dart';
 
 void secondpag() {
@@ -26,15 +22,12 @@ class SecondPag extends StatelessWidget{
         throw Exception('Could not launch $url');
     }}
 
-<<<<<<< HEAD
     Future<void> trailerUrl () async {
    final Uri url = Uri.parse(jogos.trailer);
    if (!await launchUrl(url)) {
         throw Exception('Could not launch $url');
     }}
 
-=======
->>>>>>> dfce84c452bc55b33a0b17794263a1e3063a145e
     return Scaffold(
       appBar: AppBar(
         title: const Text('Informações dos Jogos'),
@@ -103,19 +96,7 @@ class SecondPag extends StatelessWidget{
 
                     Divider(height: 20, indent: 20, endIndent: 0, color: Colors.black),
                     ElevatedButton(
-<<<<<<< HEAD
                       onPressed: trailerUrl,
-=======
-                      onPressed: () => Navigator.push(
-                        context, 
-                        MaterialPageRoute(
-                          builder: (context) => const TrailerPag(),
-                          settings: RouteSettings(
-                            arguments: jogos
-                          )
-                        )
-                      ), 
->>>>>>> dfce84c452bc55b33a0b17794263a1e3063a145e
                       style: ButtonStyle(
                         backgroundColor: WidgetStatePropertyAll<Color>(Colors.green),
                         minimumSize: WidgetStatePropertyAll<Size>(Size(100, 100)),
