@@ -12,16 +12,24 @@ class TrailerPag extends StatefulWidget{
 class _TrailerPagState extends State<TrailerPag>{
 
   late VideoPlayerController _trailer;
+ 
+  @override 
+   void initState() {
+    super.initState();
+  }
 
   @override
   Widget build(BuildContext context){
 
-    final jogos = ModalRoute.of(context)!.settings.arguments as Jogo;
+    final ScrollController controle = ScrollController();
+
+    final jogos = ModalRoute.of(context)!.settings.arguments as Jogo;    
 
     _trailer = VideoPlayerController.asset(jogos.trailer)..initialize().then((_){
-      setState(() {});
+      _trailer.play();
+        setState(() {});
     });
-
+  
     return Scaffold(
       appBar: AppBar(
         title: const Text('Trailer dos Jogos'),
@@ -30,57 +38,82 @@ class _TrailerPagState extends State<TrailerPag>{
       ),
 
       body: Center(
-        child: _trailer.value.isInitialized ?
-        Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: [
-            AspectRatio(
-              aspectRatio: _trailer.value.aspectRatio,
-              child: VideoPlayer(_trailer),
-            ),
 
-            const Padding(padding: EdgeInsets.all(20)),
+        child: Scrollbar(
+          trackVisibility: true,
+          thumbVisibility: true,
+          thickness: 10,
+          radius: const Radius.circular(20),
+          interactive: true,
+          controller: controle,
 
-            Row(
-              mainAxisAlignment: MainAxisAlignment.center,
-              children: [
-                ElevatedButton(
-                  onPressed: () {
-                    _trailer.pause();
-                  }, 
-                  style: ButtonStyle(
-                    backgroundColor: WidgetStatePropertyAll<Color>(Colors.blue),
-                    minimumSize: WidgetStatePropertyAll<Size>(Size(80, 80)),
-                    shape: WidgetStatePropertyAll(
-                      RoundedRectangleBorder(
-                        borderRadius: BorderRadius.circular(100)
-                      )
+          child: ListView.builder(
+
+            controller: controle,
+            itemCount: 1,
+            itemBuilder: (context, index) {
+
+              return Container(
+                padding: const EdgeInsets.all(5),
+              
+                child: Column(
+                  mainAxisSize: MainAxisSize.max,
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  spacing: 2,
+                  
+                  children: [
+                    AspectRatio(
+                      aspectRatio: _trailer.value.aspectRatio,
+                      child: VideoPlayer(_trailer),
+                    ),
+                
+                    const Padding(padding: EdgeInsets.all(2)),
+                
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: [
+                        ElevatedButton(
+                          onPressed: () {
+                            _trailer.pause();
+                          }, 
+                          style: ButtonStyle(
+                            backgroundColor: WidgetStatePropertyAll<Color>(Colors.blue),
+                            minimumSize: WidgetStatePropertyAll<Size>(Size(80, 80)),
+                            shape: WidgetStatePropertyAll(
+                              RoundedRectangleBorder(
+                                borderRadius: BorderRadius.circular(100)
+                              )
+                            )
+                          ),
+                          child: const Icon(Icons.pause)
+                        ),
+                
+                        const Padding(padding: EdgeInsets.all(2)),
+                
+                        ElevatedButton(
+                          onPressed: () {
+                            _trailer.play();
+                          }, 
+                          style: ButtonStyle(
+                            backgroundColor: WidgetStatePropertyAll<Color>(Colors.red),
+                            minimumSize: WidgetStatePropertyAll<Size>(Size(80, 80)),
+                            shape: WidgetStatePropertyAll(
+                              RoundedRectangleBorder(
+                                borderRadius: BorderRadius.circular(100)
+                              )
+                            )
+                          ), 
+                          child: const Icon(Icons.play_arrow)
+                        )
+
+                      ],
                     )
-                  ),
-                  child: const Icon(Icons.pause)
+                  ],
                 ),
-
-                const Padding(padding: EdgeInsets.all(2)),
-
-                ElevatedButton(
-                  onPressed: () {
-                    _trailer.play();
-                  }, 
-                  style: ButtonStyle(
-                    backgroundColor: WidgetStatePropertyAll<Color>(Colors.red),
-                    minimumSize: WidgetStatePropertyAll<Size>(Size(80, 80)),
-                    shape: WidgetStatePropertyAll(
-                      RoundedRectangleBorder(
-                        borderRadius: BorderRadius.circular(100)
-                      )
-                    )
-                  ), 
-                  child: const Icon(Icons.play_arrow)
-                )
-              ],
-            )
-          ],
-        ) : Text("não começou")
+              );
+            }
+          )
+        ) 
       ),
     );
   }
