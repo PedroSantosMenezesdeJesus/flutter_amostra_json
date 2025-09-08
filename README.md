@@ -1,6 +1,8 @@
 # flutter_amostra_json
 
-
+## 👥 Integrantes
+- Isaque Dias  
+- Pedro Santos
 
 ---
 
