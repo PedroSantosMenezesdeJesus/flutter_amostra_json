@@ -26,7 +26,7 @@ O app permite que o usuário:
 
 - [tela inicial (home)](https://github.com/PedroSantosMenezesdeJesus/flutter_amostra_json/wiki/Tela-Home)
 
-- [tela secundária](https://github.com/PedroSantosMenezesdeJesus/flutter_amostra_json/wiki/Tela-Secondaria)
+- [tela secundária](https://github.com/PedroSantosMenezesdeJesus/flutter_amostra_json/wiki/Tela--secund%C3%A1ria)
 
 - [tela exterior](https://github.com/PedroSantosMenezesdeJesus/flutter_amostra_json/wiki/telas-exteriores)
 
