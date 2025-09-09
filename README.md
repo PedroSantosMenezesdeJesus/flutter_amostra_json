@@ -34,3 +34,7 @@ O app permite que o usuário:
 
 ---
 
+## Diagrama de Classes
+
+<img width="461" height="461" alt="image" src="https://github.com/user-attachments/assets/2ac14fb4-7249-460e-96b7-786b12b11df1" />
+
