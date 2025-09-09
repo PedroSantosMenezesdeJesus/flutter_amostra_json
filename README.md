@@ -30,5 +30,7 @@ O app permite que o usuário:
 
 - [tela exterior](https://github.com/PedroSantosMenezesdeJesus/flutter_amostra_json/wiki/telas-exteriores)
 
+- [diagrama de classes](https://github.com/PedroSantosMenezesdeJesus/flutter_amostra_json/wiki/Diagrama-de-Classes)
+
 ---
 
