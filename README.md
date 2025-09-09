@@ -15,7 +15,7 @@ O app permite que o usuário:
 - Visualize detalhes do jogo (nome, data, empresa, gênero, descrição, capa)
 - Acesse ao trailer do jogo
 - Galeria de imagens do jogo
-- Navegação entre as telas: Home - Descrição - Galeria
+- Navegação entre as telas: Home - Descrição - Exterior
 - Navegação de telas externas como a página steam do jogo
 
 ---
