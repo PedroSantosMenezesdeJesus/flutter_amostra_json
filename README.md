@@ -22,6 +22,8 @@ O app permite que o usuário:
 
 ## Wiki
 
+- [Home](https://github.com/PedroSantosMenezesdeJesus/flutter_amostra_json/wiki)
+
 - [tela inicial (home)](https://github.com/PedroSantosMenezesdeJesus/flutter_amostra_json/wiki/Tela-Home)
 
 - [tela secondaria](https://github.com/PedroSantosMenezesdeJesus/flutter_amostra_json/wiki/Tela-Secondaria)
